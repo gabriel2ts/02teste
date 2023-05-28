@@ -29,6 +29,33 @@
     <a-entity light="type: point; color: #ffffff; intensity: 0.5" position="2 2 -2"></a-entity>
 </a-entity>
 
+        
+        
+        
+         <div id="camera-access-message" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Montserrat', sans-serif; color: blue; font-size: 20px;">
+            Por favor, permita o acesso à câmera para continuar com a experiência.
+        </div>
+
+        <script>
+            // Função para ocultar a mensagem de acesso à câmera
+            function hideCameraAccessMessage() {
+                var message = document.getElementById('camera-access-message');
+                if (message) {
+                    message.style.display = 'none';
+                }
+            }
+
+            // Evento que é acionado quando o usuário permite o acesso à câmera
+            document.addEventListener('arjs-video-loaded', function () {
+                hideCameraAccessMessage();
+            });
+        </script>
+        
+        
+        
+        
+        
+        
 
 
  <a-assets>
