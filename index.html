@@ -98,6 +98,17 @@
             
             
             <a-entity camera></a-entity>
+         <script>
+                function onModelLoad() {
+                    var loadingIcon = document.getElementById('loading-icon');
+                    var bowserModel = document.getElementById('bowser-model');
+
+                    loadingIcon.setAttribute('visible', 'false');
+                    bowserModel.setAttribute('visible', 'true');
+                }
+            </script>
+        
+        
         </a-scene>
     </body>
 </html>
