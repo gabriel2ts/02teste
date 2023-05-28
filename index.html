@@ -9,14 +9,32 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
-        <a-marker preset="custom"
+        
+                  
+                  <a-marker preset="custom"
                 url="assets/marker.patt">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
+                            
+                                            <a-marker preset="custom"
+                url="assets/marker2.patt">
+            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+                            
+                            
+                            <a-entity
             position="0 0 0"
             scale="0.05 0.05 0.05"
             gltf-model="your-server/https://gabriel2ts.github.io/assets/asset.glb"
             ></a-entity>
+                                                      
+                                                                        <a-entity
+            position="0 0 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="your-server/https://gabriel2ts.github.io/assets/asset2.mp4"
+            ></a-entity>
+                            
+                            
+                            
+                            
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
